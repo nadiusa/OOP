@@ -10,7 +10,7 @@ public class Main {
         int m = scanner1.nextInt();
         System.out.println(m);
         for (int j = 0; j < m; j++) {
-            float suma=0f;
+            float sum=0f;
            // int counter=0;
             System.out.println("Enter the name of University"+ (j+1));
             Scanner scanner = new Scanner(System.in);
@@ -43,12 +43,12 @@ public class Main {
                 System.out.println("Enter the average mark");
                 students[i].average_mark = scanner.nextFloat();
                 System.out.println(students[i].average_mark);
-                suma+=students[i].average_mark;
+                sum+=students[i].average_mark;
                 //counter++;
             }
-            System.out.println("suma=" + suma);
-           System.out.println("The average mark of this university " + (j+1) + "is: "+(suma/n));
-            average= average+suma/n;
+            System.out.println("suma=" + sum);
+           System.out.println("The average mark of this university " + (j+1) + "is: "+(sum/n));
+            average= average+sum/n;
            // counter_2++;
         }
         System.out.println("The average mark of all universities "+(average/m));
